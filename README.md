@@ -6,7 +6,7 @@ The project provides a visual platform where users can explore artworks, discove
 
 ## Live Website
 
-[View Picverse on Vercel](https://picverse-zeta.vercel.app/)
+[View Picverse on Vercel](https://picverse-iota.vercel.app/)
 
 ## Project Overview
 
