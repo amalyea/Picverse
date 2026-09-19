@@ -12,7 +12,7 @@ The project provides a visual platform where users can explore artworks, discove
 
 Picverse was created to explore how interface design, visual hierarchy, and responsive development can improve the experience of discovering digital artwork.
 
-I designed and developed the project independently using HTML, CSS, JavaScript, Figma, and received a score of 92/100.
+I designed and developed the project independently using HTML, CSS, JavaScript, and Figma.
 
 ## Key Features
 
