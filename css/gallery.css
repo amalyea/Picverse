@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+@media (max-width: 768px) {
+    .hideOnMobile{
+        display: none;
+    }
+    
+    .gallery .popup img {
+        width: 95%;
+    }
+
+    .gallery {
+        font-size: 12px;
+    }
+
+    .gallery h1{
+        font-size: 12px;
+        font-weight: 500;
+        margin: 5px;
+    }
+
+    .gallery label {
+        margin: 5px;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+}
+
+body {
+    height: 100vh;
+}
+
+.navbar {
+    font-family: "Montserrat", sans-serif;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.right-side {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo a {
+    font-size: 35px;
+    font-weight: 500;
+    color: #060318;
+    font-family: "Pacifico", cursive;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-menu li a {
+    color: #2f2f2f;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.nav-menu li a:hover {
+    color: #181818;
+    text-decoration: underline;
+    transition: 0.15s;
+}
+
+.auth-buttons button {
+    background-color: rgb(206, 206, 206);
+    margin-left: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 90px;
+    border: none;
+    font-family: "Montserrat", sans-serif;
+    color: #060318;
+    font-weight: 600;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.auth-buttons button a {
+    color: #060318;
+}
+
+.auth-buttons .login{
+    background-color: #060318;
+}
+
+.auth-buttons .login a {
+    color: white;
+}
+
+.auth-buttons button:hover {
+    opacity: 0.7;
+    transition: 0.15s;
+}
+
+.sidebar {
+    position: fixed;
+    padding-top: 15px;
+    padding-left: 15px;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar a {
+    width: 100%;
+}
+
+.gallery {
+    margin-top: 60px;
+    position: relative;
+    min-height: 100vh;
+    text-align: center;
+    color: #060318;
+}
+
+.gallery h1 {
+    font-family: "Mulish";
+    font-size: 40px;
+    font-weight: 750;
+    padding: 15px;
+}
+
+.gallery input {
+    display: none;
+}
+
+.gallery label {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: "Montserrat", sans-serif;
+    background-color: #ececec;
+    border-radius: 7px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.gallery label:hover {
+    opacity: 0.5;
+}
+
+.gallery .img-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+.gallery .img-container .image {
+    height: 300px;
+    width: 350px;
+    border: 10px solid #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.gallery .img-container .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+}
+
+.gallery .img-text {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    padding: 6px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.gallery .img-container .image:hover img {
+    transform: scale(1.1);
+}
+
+.gallery .popup {
+    margin-top: 45px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+}
+
+.gallery .popup span {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 60px;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.gallery .popup img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid white;
+    border-radius: 5px;
+    width: 750px;
+    object-fit: cover;
+}
+
+#check1:checked ~ .img-container .image {
+    transform: scale(1);
+    opacity: 1;
+    position: relative;
+    transition: 0.5s;
+}
+
+#check2:checked ~ .img-container .disney {
+    transform: scale(1);
+    opacity: 1;
+    position: relative;
+    display: inline-block;
+}
+
+#check2:checked ~ .img-container .sketch,
+#check2:checked ~ .img-container .cartoon {
+    opacity: 0;
+    transform: scale(0);
+    position: absolute;
+    display: inline-block;
+    transition: 0s;
+}
+
+#check3:checked ~ .img-container .sketch {
+    transform: scale(1);
+    opacity: 1;
+    position: relative;
+    display: inline-block;
+}
+
+#check3:checked ~ .img-container .disney,
+#check3:checked ~ .img-container .cartoon {
+    opacity: 0;
+    transform: scale(0);
+    position: absolute;
+    transition: 0s;
+}
+
+#check4:checked ~ .img-container .cartoon {
+    transform: scale(1);
+    opacity: 1;
+    position: relative;
+}
+
+#check4:checked ~ .img-container .disney,
+#check4:checked ~ .img-container .sketch {
+    opacity: 0;
+    transform: scale(0);
+    position: absolute;
+    transition: 0s;
+}

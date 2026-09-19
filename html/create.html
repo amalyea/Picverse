@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create</title>
+  <link rel="stylesheet" href="../css/navbar.css">
+  <link rel="stylesheet" href="../css/create.css">
+  <script src="../js/auth-guard.js"></script>
+  <script src="../js/create.js"></script>
+<script src="../js/navigation.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="nav-link">
+        <div class="logo"><a href="home.html">Picverse</a></div>
+          <div class="right-side">
+            <ul class="nav-menu sidebar">
+              <li onclick="hideSideBar()"><a href="#"><img src="../assets/images/29.png" height="26" width="26" alt="Close icon"></a></li>
+              <li><a href="home.html">Home</a></li>
+              <li><a class="active" href="create.html">Create</a></li>
+              <li><a href="community.html">Communities</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><button class="sidebar-logout" type="button"
+                  onclick="logout()">Log out</button>
+              </li>
+              <li class="menu-button" onclick="showSideBar()"></li>
+            </ul>
+            <ul class="nav-menu">
+              <li class="hideOnMobile"><a href="home.html">Home</a></li>
+              <li class="hideOnMobile"><a class="active" href="create.html">Create</a></li>
+              <li class="hideOnMobile"><a href="community.html">Communities</a></li>
+              <li class="hideOnMobile"><a href="about.html">About</a></li>
+              <li onclick="showSideBar()"><a href="#"><img src="../assets/images/28.png" height="26" width="26" alt="Hamburger-icon"></a></li>
+            </ul>
+            <div class="auth-buttons">
+              <button
+                  class="logout-button desktop-logout"
+                  type="button"
+                  data-logout>Log out
+                </button>
+            </div>
+          </div>
+      </div>
+    </nav>
+  </header>
+  <div class="upload-container">
+    <div class="form-wrapper">
+      <h1>Create Artwork</h1>
+
+      <form id="upload-form" method="GET">
+        <div class="input-group">
+          <div class="upload" onclick="document.getElementById('file').click()">
+            <img src="../assets/images/26.png" alt="Upload icon">
+            <input type="file" class="file-input" id="file" name="filename" hidden accept="image/*">
+            <h3>Select a file</h3>
+          </div>
+          <span class="error" id="file-error"></span>
+        </div>
+
+        <div class="input-group">
+          <label>Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email">
+          <span class="error" id="email-error"></span>
+        </div>
+
+        <div class="input-group">
+          <label>Title</label>
+          <input type="text" id="title" name="title" placeholder="Add title">
+          <span class="error" id="title-error"></span>
+        </div>
+
+        <div class="input-group">
+          <label>Description</label>
+          <input type="text" id="description" name="description" placeholder="Add description">
+          <span class="error" id="description-error"></span>
+        </div>
+
+        <div class="input-group">
+          <label>Tags</label>
+          <input type="text" id="tags" name="tags" placeholder="Add tags">
+          <span class="error" id="tags-error"></span>
+        </div>
+
+        <div class="ai-details">
+          <input type="radio" name="ai" id="dot-1">
+          <input type="radio" name="ai" id="dot-2">
+          <span class="ai-title">Is this art produced by AI?</span>
+          <div class="category">
+            <label for="dot-1">
+              <span class="dot one"></span>
+              <span class="opt">Yes (Fully/partly created by AI)</span>
+            </label>
+            <label for="dot-2">
+              <span class="dot two"></span>
+              <span class="opt">No</span>
+            </label>
+          </div>
+          <span class="error" id="ai-error"></span>
+        </div>
+
+        <div class="button-group">
+          <button type="reset" class="btn reset-btn" onclick="resetForm()">Reset</button>
+          <button type="button" class="btn submit-btn" onclick="submitRegister()">Publish</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="../js/create.js"></script>
+</body>
+</html>

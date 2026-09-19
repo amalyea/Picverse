@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+  <link rel="stylesheet" href="../css/navbar.css">
+  <link rel="stylesheet" href="../css/gallery.css">
+  <script src="../js/auth-guard.js"></script>
+  <script src="../js/gallery.js"></script>
+  <script src="../js/navigation.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="nav-link">
+        <div class="logo"><a href="home.html">Picverse</a></div>
+          <div class="right-side">
+            <ul class="nav-menu sidebar">
+              <li onclick="hideSideBar()"><a href="#"><img src="../assets/images/29.png" height="26" width="26" alt="Close icon"></a></li>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="create.html">Create</a></li>
+              <li><a href="community.html">Communities</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a class="active" href="gallery.html">Gallery</a></li>
+              <li><button class="sidebar-logout" type="button"
+                  onclick="logout()">Log out</button>
+              </li>
+              <li class="menu-button" onclick="showSideBar()"></li>
+            </ul>
+            <ul class="nav-menu">
+              <li class="hideOnMobile"><a href="home.html">Home</a></li>
+              <li class="hideOnMobile"><a href="create.html">Create</a></li>
+              <li class="hideOnMobile"><a href="community.html">Communities</a></li>
+              <li class="hideOnMobile"><a href="about.html">About</a></li>
+              <li onclick="showSideBar()"><a href="#"><img src="../assets/images/28.png" height="26" width="26" alt="Hamburger-icon"></a></li>
+            </ul>
+            <div class="auth-buttons">
+              <button
+                  class="logout-button desktop-logout"
+                  type="button"
+                  data-logout>Log out
+                </button>
+            </div>
+          </div>
+      </div>
+    </nav>
+  </header>
+  <div class="gallery">
+    <h1>Gallery</h1>
+    <input type="radio" name="Gallery" id="check1" checked>
+    <input type="radio" name="Gallery" id="check2">
+    <input type="radio" name="Gallery" id="check3">
+    <input type="radio" name="Gallery" id="check4">
+
+    <label for="check1">All</label>
+    <label for="check2">Disney</label>
+    <label for="check3">Sketch</label>
+    <label for="check4">Cartoon</label>
+
+    <div class="img-container">
+      <div class="image disney">
+        <img src="../assets/images/10.webp" alt="High School Musical Season 3">
+        <div class="img-text">
+          <p>High School Musical #03 | Enisaurus</p>
+        </div>
+      </div>
+      <div class="image disney">
+        <img src="../assets/images/11.webp" alt="Disneyland Corgi">
+        <div class="img-text">
+          <p>Disneyland Corgi | Jerrod Maruyama</p>
+        </div>
+      </div>
+      <div class="image disney">
+        <img src="../assets/images/12.webp" alt="Encanto Movie">
+        <div class="img-text">
+          <p>Encanto | Amy Hood</p>
+        </div>
+      </div>
+      <div class="image disney">
+        <img src="../assets/images/13.webp" alt="Elemental">
+        <div class="img-text">
+          <p>Elemental | Rian Rahardi</p>
+        </div>
+      </div>
+      <div class="image disney">
+        <img src="../assets/images/14.jpg" alt="Rapunzel">
+        <div class="img-text">
+          <p>Rapunzel | David Gilson</p>
+        </div>
+      </div>
+
+      <div class="image sketch">
+        <img src="../assets/images/16.jpg" alt="Tomato">
+        <div class="img-text">
+          <p>Tomatoes | Sapir Alifia</p>
+        </div>
+      </div>
+      <div class="image sketch">
+        <img src="../assets/images/15.webp" alt="Supermarket">
+        <div class="img-text">
+          <p>Supermarket | Alyona</p>
+        </div>
+      </div>
+      <div class="image sketch">
+        <img src="../assets/images/17.jpg" alt="Spiderman">
+        <div class="img-text">
+          <p>Spiderman | Christina Hernandez</p>
+        </div>
+      </div>
+      <div class="image sketch">
+        <img src="../assets/images/18.jpg" alt="Rio Birds">
+        <div class="img-text">
+          <p>Rio Birds | Millaa</p>
+        </div>
+      </div>
+      <div class="image sketch">
+        <img src="../assets/images/19.jpg" alt="Rae">
+        <div class="img-text">
+          <p>Formula One | Rae</p>
+        </div>
+      </div>
+
+      <div class="image cartoon">
+        <img src="../assets/images/20.jpg" alt="Scooby Doo">
+        <div class="img-text">
+          <p>Scooby Doo | C.W. Roederer</p>
+        </div>
+      </div>
+      <div class="image cartoon">
+        <img src="../assets/images/22.jpg" alt="Girl">
+        <div class="img-text">
+          <p>Girl | Mossedmars</p>
+        </div>
+      </div>
+      <div class="image cartoon">
+        <img src="../assets/images/21.jpg" alt="Turtle">
+        <div class="img-text">
+          <p>Turtle | Ernestina J.McNulty</p>
+        </div>
+      </div>
+      <div class="image cartoon">
+        <img src="../assets/images/23.jpg" alt="Crocodile">
+        <div class="img-text">
+          <p>Crocodile | Anhanh</p>
+        </div>
+      </div>
+      <div class="image cartoon">
+        <img src="../assets/images/24.jpg" alt="Hello Kitty">
+        <div class="img-text">
+          <p>Hello Kitty | Starsxxlullabies</p>
+        </div>
+      </div>
+    </div>
+    <div class="popup">
+      <span>&times;</span>
+      <img src="../assets/images/10.webp" alt="High School Musical Season 3">
+    </div>
+  </div>
+  <footer class="site-footer">
+    <p>© 2026 Picverse. Created by Amalia Azzahra.</p>
+  </footer>
+  <script src="../js/gallery.js"></script>
+</body>
+</html>

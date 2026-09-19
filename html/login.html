@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Log In | Picverse</title>
+    <link rel="stylesheet" href="../css/signin.css">
+</head>
+
+<body>
+  <main class="wrapper">
+    <a class="auth-logo" href="index.html">Picverse</a>
+    <div class="auth-heading">
+      <h1>Welcome back</h1>
+      <p>Log in to continue exploring Picverse.</p>
+    </div>
+    <p id="error-message" role="alert"></p>
+    <form id="form" novalidate>
+      <div class="input-group">
+        <label for="email-input">
+          <img
+            src="../assets/images/34.png"
+            width="24"
+            height="24"
+            alt="">
+        </label>
+        <input
+          type="email"
+          name="email"
+          id="email-input"
+          placeholder="Email"
+          autocomplete="email"
+          required>
+      </div>
+      <div class="input-group">
+        <label for="password-input">
+          <img
+            src="../assets/images/31.png"
+            width="24"
+            height="24"
+          alt="">
+        </label>
+        <input
+          type="password"
+          name="password"
+          id="password-input"
+          placeholder="Password"
+          autocomplete="current-password"
+          required>
+      </div>
+      <button type="submit">Log in</button>
+    </form>
+    <p class="auth-switch">
+      New to Picverse?
+      <a href="signin.html">Create an account</a>
+    </p>
+  </main>
+  <script src="../js/signin.js"></script>
+</body>
+</html>

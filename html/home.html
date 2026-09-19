@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Picverse</title>
+  <link rel="stylesheet" href="../css/navbar.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/auth-guard.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/navigation.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="nav-link">
+        <div class="logo"><a href="home.html">Picverse</a></div>
+          <div class="right-side">
+            <ul class="nav-menu sidebar">
+              <li onclick="hideSideBar()"><a href="#"><img src="../assets/images/29.png" height="26" width="26" alt="Close icon"></a></li>
+              <li><a class="active" href="home.html">Home</a></li>
+              <li><a href="create.html">Create</a></li>
+              <li><a href="community.html">Communities</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><button class="sidebar-logout" type="button"
+                  onclick="logout()">Log out</button>
+              </li>
+              <li class="menu-button" onclick="showSideBar()"></li>
+            </ul>
+            <ul class="nav-menu">
+              <li class="hideOnMobile"><a class="active" href="home.html">Home</a></li>
+              <li class="hideOnMobile"><a href="create.html">Create</a></li>
+              <li class="hideOnMobile"><a href="community.html">Communities</a></li>
+              <li class="hideOnMobile"><a href="about.html">About</a></li>
+              <li onclick="showSideBar()"><a href="#"><img src="../assets/images/28.png" height="26" width="26" alt="Hamburger-icon"></a></li>
+            </ul>
+            <div class="auth-buttons">
+              <button
+                  class="logout-button desktop-logout"
+                  type="button"
+                  data-logout>Log out
+                </button>
+            </div>
+          </div>
+      </div>
+    </nav>
+  </header>
+  <section class="home">
+    <div class="description">
+      <h1>CONNECT. EXPLORE. CREATE</h1>
+        <a href="gallery.html" class="explore-button">Explore Gallery</a>
+    </div>
+    <div class="slideshow-container">
+      <div class="slider-wrapper">
+        <div class="slider" id="slider">
+          <div class="slide">
+            <img id="slide-1" src="../assets/images/1.jpg" alt="La Grenouillere by Claude Monet">
+            <h3 class="caption">La Grenouillere | Claude Monet</h3>
+          </div>
+          <div class="slide">
+            <img id="slide-2" src="../assets/images/2.jpg" alt="Starry Night by Van Gogh">
+            <h3 class="caption">Starry Night | Van Gogh</h3>
+          </div>
+          <div class="slide">
+            <img id="slide-3" src="../assets/images/3.jpg" alt="In Tiers by Hego">
+            <h3 class="caption">In Tiers | Hego</h3>
+          </div>
+        </div>
+        <div class="slider-nav">
+          <a href="#slide-1"></a>
+          <a href="#slide-2"></a>
+          <a href="#slide-3"></a>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <h2 class="subheading">Discover artists and artworks you'll love</h2>
+      <div class="trending">
+        <h3>Trending searches</h3>
+          <ul class="tags">
+            <li><a href="gallery.html">Web design</a></li>
+            <li><a href="gallery.html">Automotive</a></li>
+            <li><a href="gallery.html">Fantasy</a></li>
+            <li><a href="gallery.html">Ocean</a></li>
+            <li><a href="gallery.html">Comic art</a></li>
+            <li><a href="gallery.html">Abstract</a></li>
+          </ul>
+      </div>
+      <div class="featured-art">
+        <h3>Featured Artworks</h3>
+        <div class="main-content">
+          
+          <div class="featured-item">
+            <img src="../assets/images/5.webp" class="img" alt="Flower Caroline - Featured Artworks">
+            <div class="credit">
+              <p>Le Jardin | Caroline Ashwood</p>
+              <div class="likes">
+                <span><img src="../assets/images/4.png" alt="Love Icon"></span>
+                <span>20k</span>
+              </div>
+            </div>
+          </div>
+          <div class="featured-item">
+            <img src="../assets/images/6.webp" class="img" alt="Keep it chill - Featured Artworks">
+            <div class="credit">
+              <p>Keep it Chill | Jesse Bowser</p>
+              <div class="likes">
+                <span><img src="../assets/images/4.png" alt="Love Icon"></span>
+                <span>5k</span>
+              </div>
+            </div>
+          </div>
+          <div class="featured-item">
+            <img src="../assets/images/7.jpg" class="img" alt="Sunflowers - Featured Artworks">
+            <div class="credit">
+              <p>Sunflowers | Vincent Van Gogh</p>
+              <div class="likes">
+                <span><img src="../assets/images/4.png" alt="Love Icon"></span>
+                <span>13k</span>
+              </div>
+            </div>
+          </div>
+          <div class="featured-item">
+            <img src="../assets/images/8.webp" class="img" alt="Dog Eating Ramen - Featured Artworks">
+            <div class="credit">
+              <p>Dog Eating Ramen | John Poh</p>
+              <div class="likes">
+                <span><img src="../assets/images/4.png" alt="Love Icon"></span>
+                <span>23k</span>
+              </div>
+            </div>
+          </div>
+          <div class="featured-item">
+            <img src="../assets/images/9.webp" class="img" alt="Waterloo Bridge - Featured Artworks">
+            <div class="credit">
+              <p>Waterloo Bridge | Claude Monet</p>
+              <div class="likes">
+                <span><img src="../assets/images/4.png" alt="Love Icon"></span>
+                <span>50k</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="site-footer">
+    <p>© 2026 Picverse. Created by Amalia Azzahra.</p>
+  </footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>

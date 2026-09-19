@@ -1,0 +1,12 @@
+# Editor
+.vscode/
+
+# Operating system
+.DS_Store
+Thumbs.db
+
+# Vercel local settings
+.vercel/
+
+# Logs
+*.log

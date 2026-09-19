@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    >
+    <title>Community | Picverse</title>
+    <script src="../js/auth-guard.js"></script>
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/community.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="nav-link">
+        <div class="logo">
+          <a href="home.html">Picverse</a>
+        </div>
+        <div class="right-side">
+          <ul class="nav-menu sidebar">
+            <li onclick="hideSideBar()">
+              <a href="#">
+                <img
+                  src="../assets/images/29.png"
+                  height="26"
+                  width="26"
+                  alt="Close menu">
+              </a>
+            </li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="create.html">Create</a></li>
+            <li>
+              <a class="active" href="community.html">
+                Communities
+              </a>
+            </li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li>
+              <button
+                class="sidebar-logout"
+                type="button"
+                onclick="logout()">Log out</button>
+            </li>
+          </ul>
+          <ul class="nav-menu">
+            <li class="hideOnMobile"><a href="home.html">Home</a></li>
+            <li class="hideOnMobile"><a href="create.html">Create</a></li>
+            <li class="hideOnMobile">
+              <a class="active" href="community.html">Communities</a>
+            </li>
+            <li class="hideOnMobile">
+              <a href="about.html">About</a>
+            </li>
+            <li onclick="showSideBar()">
+              <a href="#"><img src="../assets/images/28.png" height="26" width="26" alt="Hamburger-icon"></a>
+            </li>
+          </ul>
+          <div class="auth-buttons">
+            <button
+              class="logout-button"
+              type="button"
+              onclick="logout()">Log out
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="community-container">
+    <section class="community-hero">
+      <div class="hero-content">
+        <span class="eyebrow">Picverse Community</span>
+        <h1>Connect through creativity.</h1>
+        <p>
+          Discover conversations, creative challenges, and people
+          who share your interest in photography and digital art.
+        </p>
+        <a class="hero-button" href="create.html">
+          Share your creation
+        </a>
+      </div>
+    </section>
+
+    <section class="community-stats">
+      <article class="stat-card">
+        <strong>2.4K</strong>
+        <span>Community members</span>
+      </article>
+      <article class="stat-card">
+        <strong>186</strong>
+        <span>Active discussions</span>
+      </article>
+      <article class="stat-card">
+        <strong>42</strong>
+        <span>Creative challenges</span>
+      </article>
+    </section>
+
+    <div class="community-grid">
+      <section class="discussion-panel">
+        <div class="section-heading">
+          <div>
+            <span class="section-label">Popular today</span>
+            <h2>Active Forum Discussions</h2>
+          </div>
+          <a href="#">View all</a>
+        </div>
+
+        <div class="discussion-list">
+          <article class="forum-post">
+            <span class="post-category">Photography</span>
+            <h3>How can I improve my night photography?</h3>
+            <p>
+              Share your experience with low-light settings,
+              composition, and long exposure.
+            </p>
+
+            <div class="post-meta">
+              <span>by @nightwalker</span>
+              <span>12 replies</span>
+              <time datetime="2025-06-03">
+                June 3, 2025
+              </time>
+            </div>
+          </article>
+
+          <article class="forum-post">
+            <span class="post-category">Photography gear</span>
+            <h3>Best cameras under $1,000 in 2025</h3>
+            <p>
+              Compare practical camera options for beginners,
+              students, and independent creators.
+            </p>
+
+            <div class="post-meta">
+              <span>by @gearhead</span>
+              <span>18 replies</span>
+                <time datetime="2025-06-02">
+                  June 2, 2025
+                </time>
+            </div>
+          </article>
+
+          <article class="forum-post featured-post">
+            <span class="post-category">Community challenge</span>
+            <h3>Picverse Contest: Submit your wildlife shots</h3>
+            <p>
+              Submit your favorite wildlife photographs and
+              exchange feedback with the community.
+            </p>
+
+            <div class="post-meta">
+              <span>by @admin</span>
+              <span>34 replies</span>
+              <time datetime="2025-06-01">
+                June 1, 2025
+              </time>
+            </div>
+          </article>
+
+          <article class="forum-post">
+            <span class="post-category">Editing</span>
+            <h3>Tips for editing natural-looking portraits</h3>
+            <p>
+              Discuss color, lighting, and retouching techniques
+              that preserve a natural result.
+            </p>
+
+            <div class="post-meta">
+              <span>by @editorial</span>
+              <span>9 replies</span>
+              <time datetime="2025-05-31">
+                May 31, 2025
+              </time>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <aside class="community-side-content">
+        <section class="activity-panel">
+          <div class="section-heading">
+            <div>
+              <span class="section-label">Live updates</span>
+              <h2>Recent Activities</h2>
+            </div>
+          </div>
+
+          <ul class="activity-list">
+            <li>
+              <span class="activity-symbol">✦</span>
+              <p><strong>@lucy</strong> started “Best Drone Cameras 2025.”</p>
+            </li>
+
+            <li>
+              <span class="activity-symbol">✦</span>
+              <p>
+                <strong>@mario</strong> followed
+                <strong>@travel_shooter</strong>.
+              </p>
+            </li>
+
+            <li>
+              <span class="activity-symbol">✦</span>
+              <p>
+                <strong>@alina</strong> commented on “Street Photography Tricks.”
+              </p>
+            </li>
+
+            <li>
+              <span class="activity-symbol">✦</span>
+              <p>
+                <strong>@kevin</strong> created “Monochrome Challenge Week.”
+              </p>
+            </li>
+          </ul>
+        </section>
+
+        <section class="users-panel">
+          <div class="section-heading">
+            <div>
+              <span class="section-label">Online now</span>
+              <h2>Active Users</h2>
+            </div>
+          </div>
+
+          <div class="user-list">
+            <article class="user-profile">
+              <img src="../assets/images/14.jpg" alt="Profile of nightwalker">
+              <div class="info">
+                <strong>@nightwalker</strong>
+                <small>Exploring the dark with light</small>
+              </div>
+
+              <span
+                class="online-indicator"
+                aria-label="Online">
+              </span>
+            </article>
+
+            <article class="user-profile">
+              <img
+                src="../assets/images/27.png"
+                alt="Profile of lucy"
+              >
+
+              <div class="info">
+                <strong>@lucy</strong>
+                <small>Drone lover and explorer</small>
+              </div>
+
+              <span
+                class="online-indicator"
+                aria-label="Online">
+              </span>
+            </article>
+
+            <article class="user-profile">
+              <img src="../assets/images/33.jpg" alt="Profile of travel shooter">
+
+              <div class="info">
+                <strong>@travel_shooter</strong>
+                <small>Wandering with lenses</small>
+              </div>
+
+              <span
+                class="online-indicator"
+                aria-label="Online">
+              </span>
+            </article>
+
+            <article class="user-profile">
+              <img src="../assets/images/8.webp" alt="Profile of alina">
+
+              <div class="info">
+                <strong>@alina</strong>
+                <small>Street stories through frames</small>
+              </div>
+
+              <span
+                class="online-indicator"
+                aria-label="Online">
+              </span>
+            </article>
+
+            <article class="user-profile">
+              <img src="../assets/images/23.jpg" alt="Profile of kevin">
+              <div class="info">
+                <strong>@kevin</strong>
+                <small>Monochrome enthusiast</small>
+              </div>
+
+              <span
+                class="online-indicator"
+                aria-label="Online">
+              </span>
+            </article>
+          </div>
+        </section>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Picverse. Created by Amalia Azzahra.</p>
+  </footer>
+  <script src="../js/navigation.js"></script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0">
+  <title>About | Picverse</title>
+  <script src="../js/auth-guard.js"></script>
+  <link rel="stylesheet" href="../css/navbar.css">
+  <link rel="stylesheet" href="../css/about.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+    <div class="nav-link">
+      <div class="logo">
+        <a href="home.html">Picverse</a>
+      </div>
+
+      <div class="right-side">
+        <ul class="nav-menu sidebar">
+          <li onclick="hideSideBar()">
+            <a href="#">
+              <img src="../assets/images/29.png"
+                height="26"
+                width="26"
+                alt="Close menu">
+            </a>
+          </li>
+
+          <li><a href="home.html">Home</a></li>
+          <li><a href="create.html">Create</a></li>
+          <li><a href="community.html">Communities</a></li>
+          <li><a class="active" href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><button
+                class="sidebar-logout"
+                type="button"
+                nclick="logout()">Log out
+              </button>
+          </li>
+        </ul>
+
+        <ul class="nav-menu">
+          <li class="hideOnMobile"><a href="home.html">Home</a></li>
+          <li class="hideOnMobile"><a href="create.html">Create</a></li>
+          <li class="hideOnMobile"><a href="community.html">Communities</a></li>
+          <li class="hideOnMobile"><a class="active" href="about.html">About</a></li>
+          <li onclick="showSideBar()"><a href="#"><img src="../assets/images/28.png" height="26" width="26" alt="Hamburger-icon"></a></li>
+        </ul>
+
+        <div class="auth-buttons">
+          <button
+            class="logout-button"
+            type="button"
+            onclick="logout()">Log out
+          </button>
+        </div>
+      </div>
+    </div>
+    </nav>
+  </header>
+
+  <main class="about-container">
+    <section class="about-hero">
+      <div class="about-hero-content">
+        <span class="eyebrow">About Picverse</span>
+        <h1>A creative home for artists and art lovers.</h1>
+        <p>
+          Picverse brings people together to discover artwork,
+          exchange ideas, and grow through a shared appreciation
+          for visual creativity.
+        </p>
+
+        <a class="explore-button" href="gallery.html">
+          Explore the gallery
+        </a>
+      </div>
+
+      <div class="about-hero-image">
+        <img
+          src="../assets/images/25.jpg"
+          alt="Creative artwork displayed on Picverse">
+      </div>
+    </section>
+
+    <section class="purpose-section">
+      <div class="purpose-heading">
+        <span class="section-number">01</span>
+        <div>
+          <span class="section-label">Our purpose</span>
+          <h2>Creativity grows when it is shared.</h2>
+        </div>
+      </div>
+
+      <p>
+        Picverse was designed as an accessible digital environment
+        where artists can present their work and connect with people
+        who appreciate it. The platform combines artwork discovery,
+        community conversations, and creative participation in one
+        simple experience.
+      </p>
+    </section>
+
+    <section class="vision-mission">
+      <article class="value-card">
+        <span class="card-number">01</span>
+        <h2>Our Vision</h2>
+        <p>
+          To create a welcoming digital home where artists and art
+          lovers can discover new perspectives, exchange ideas, and
+          develop their creative journeys.
+        </p>
+      </article>
+
+      <article class="value-card mission-card">
+        <span class="card-number">02</span>
+        <h2>Our Mission</h2>
+        <p>
+          To provide a positive and intuitive platform where people
+          can share artwork, find inspiration, join conversations,
+          and build meaningful creative connections.
+        </p>
+      </article>
+    </section>
+
+    <section class="how-it-works">
+      <div class="works-heading">
+        <span class="eyebrow">How Picverse works</span>
+        <h2>Explore, create, and connect.</h2>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <span class="feature-number">01</span>
+          <h3>Discover artwork</h3>
+          <p>
+            Browse visual work from different creators and find
+            inspiration through the Picverse gallery.
+          </p>
+          <a href="gallery.html">Visit Gallery →</a>
+        </article>
+        <article class="feature-card">
+          <span class="feature-number">02</span>
+          <h3>Share your creation</h3>
+          <p>
+            Use the creation interface to prepare and present your
+            own artwork to the community.
+          </p>
+          <a href="create.html">Start Creating →</a>
+        </article>
+
+        <article class="feature-card">
+          <span class="feature-number">03</span>
+          <h3>Join the community</h3>
+          <p>
+            Participate in discussions, discover challenges, and
+            connect with other creative people.
+          </p>
+          <a href="community.html">Meet the Community →</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Picverse. Created by Amalia Azzahra.</p>
+  </footer>
+  <script src="../js/navigation.js"></script>
+</body>
+</html>
